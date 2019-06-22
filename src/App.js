@@ -8,6 +8,7 @@ class App extends Component {
 	};
 
 	render() {
+		console.log(this.props)
 		return (
 			<div className="App">
 				<button onClick={this.handleOnClick}>Click</button>
@@ -31,5 +32,4 @@ const mapDispatchToProps = dispatch => {
 
 export default connect(
 	mapStateToProps,
-	mapDispatchToProps
-)(App);
+	mapDispatchToProps)(App);
